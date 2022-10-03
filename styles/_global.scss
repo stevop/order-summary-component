@@ -21,7 +21,6 @@ body{
     font-family: "Red Hat Display", sans-serif;
     background-color: var(--pale-blue);
     height: calc(100vh - 0.1px);
-    padding: 0 1rem;
 
     display: flex;
     flex-direction: column;
@@ -40,6 +39,7 @@ main{
     min-width: 375px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 1rem;
 
     display: flex;
     flex-direction: column;
