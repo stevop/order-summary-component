@@ -22,7 +22,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background-color: var(--pale-blue);
   height: calc(100vh - 0.1px);
-  padding: 1rem 0;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,11 +37,14 @@ body {
   }
 }
 
+main {
+  max-width: 375px;
+}
+
 img {
   border-radius: 2rem 2rem 0 0;
   display: block;
   max-width: 375px;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
