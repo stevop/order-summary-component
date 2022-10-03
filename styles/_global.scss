@@ -37,5 +37,12 @@ body{
 }
 
 main{
-    max-width: 375px;
+    min-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
