@@ -1,0 +1,122 @@
+@use "global";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// IMAGE
+img{
+    border-radius: 2rem 2rem 0 0;
+    display: block;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//MAIN CONTENT
+article{
+    background-color: white;
+    border-radius: 0 0 2rem 2rem;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+h1{
+    color: var(--dark-blue);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+p{
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section{
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 0;
+    ul{
+        list-style-type: none;
+        li{
+            &:first-of-type{
+                color: var(--dark-blue);
+                font-weight: 700;
+            }
+            &:last-of-type{
+                color: var(--desaturated-blue);
+            }
+        }
+    }
+    a{
+        align-self: center;
+        color: var(--dark-blue);
+        font-weight: 700;
+        transition: .4s ease-in-out color;
+        &:hover, &:focus{
+            cursor: pointer;
+            color: var(--bright-blue);
+        }
+    }
+}
+
+button:first-of-type{
+    background-color: var(--bright-blue);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px var(--desaturated-blue);
+    color: white;
+    display: block;
+    font-weight: 700;
+    letter-spacing: .025rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+    transition: .4s ease-in-out background-color;
+
+    height: 3.5rem;
+    width: 90%;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        background-color: var(--desaturated-blue);
+    }
+}
+
+button:last-of-type{
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px var(--desaturated-blue);
+    color: var(--desaturated-blue);
+    display: block;
+    font-weight: 700;
+    letter-spacing: .025rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: .4s ease-in-out background-color;
+    
+    height: 3.5rem;
+    width: 90%;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        background-color: var(--very-pale-blue);
+    }
+}
+
+.attribution { 
+    color: var(--dark-blue);
+    font-size: .75rem; 
+    margin-top: 1rem;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
